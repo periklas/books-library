@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+GET     /api/listAll                controllers.BooksLibraryController.listAll
+
+GET     /api/find                   controllers.BooksLibraryController.findBook(title: String)
+
+POST    /api/addBook                controllers.BooksLibraryController.addBook
